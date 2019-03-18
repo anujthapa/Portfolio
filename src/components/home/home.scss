@@ -6,44 +6,8 @@
   align-content: center;
   line-height: 1vh;
   position: relative;
-  
-}
-.focus {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: white;
-  letter-spacing: .2rem;
-  line-height: 1;
-  position: relative;
-  width: $componentSize;
-  &:before {
-      content: 'Focus';
-      filter: blur(3px);
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    width: $maskSize;
-    height: calc(100% + #{$borderOffset});
-    top: -($borderOffset / 2);
-    left: 0;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
-    animation: mask-move $animationProps;
-  }
-  &--mask {
-    overflow: hidden;
-    position: absolute;
-    width: $maskSize;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: $backgroundColor;
-    animation: mask-move $animationProps;
-    &-inner {
-      animation: mask-inner-move $animationProps;
-    }
-  }
+ 
+ 
 }
 
 .box1{
@@ -91,18 +55,21 @@ justify-content: space-around;
 .home .intoduction span{
 width:100%
 }
-.home .intoduction .socialmedia{
+.home{
+  .intoduction{
+    .socialmedia{
   width:10vw;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
-}
+}}} 
 .home .intoduction .hireme{
+  margin-top:2vh;
   width:100%;
 }
 .home .img{
   flex:1;
-  height: 80vh;
+  height: 50vh;
 } 
 img{
   max-width: 100%;

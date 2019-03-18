@@ -1,0 +1,14 @@
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1{
+  width:100%
+}
+.filters{
+  width:70vw;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly
+}

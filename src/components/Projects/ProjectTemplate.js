@@ -1,51 +1,43 @@
 import React from "react"
-import "/Users/anujthapa/Documents/portfolio/src/components/Projects/projectTemplate.scss"
+import "./projectTemplate.scss"
 
-const ProjectTemplate = () => {
+const ProjectTemplate = ({
+  projectname,
+  date,
+  tag,
+  subheading,
+  img,
+  description
+}) => {
   return (
     <div className="blog-card">
       <div className="meta">
         <div
           className="photo"
           style={{
-            backgroundImage: `url({https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jp})`
+            backgroundImage: `url(${img}+)`
           }}
         />
         <ul className="details">
           <li className="author">
-            <a href="#">John Doe</a>
+            <a href="#">{projectname}</a>
           </li>
-          <li className="date">Aug. 24, 2015</li>
+          <li className="date">{date}</li>
           <li className="tags">
             <ul>
-              <li>
-                <a href="#">Learn</a>
-              </li>
-              <li>
-                <a href="#">Code</a>
-              </li>
-              <li>
-                <a href="#">HTML</a>
-              </li>
-              <li>
-                <a href="#">CSS</a>
-              </li>
+              {tag.map(item => (
+                <li>
+                  <a href="#">{item}</a>
+                </li>
+              ))}
             </ul>
           </li>
         </ul>
       </div>
       <div className="description">
-        <h1>Learning to Code</h1>
-        <h2>Opening a door to the future</h2>
-        <p>
-          {" "}
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
-          dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque
-          ad aliquam facilis numquam. Veritatis, sit.
-        </p>
-        <p className="read-more">
-          <a href="#">Read More</a>
-        </p>
+        <h1>{projectname}</h1>
+        <h2>{subheading}</h2>
+        <p>{description}</p>
       </div>
     </div>
   )

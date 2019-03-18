@@ -1,5 +1,5 @@
 import React from "react"
-
+import "./button.scss"
 const Button = ({
   className,
   onClick,
@@ -21,7 +21,6 @@ const Button = ({
       >
         {text}
       </button>
-      />
     </div>
   )
 }

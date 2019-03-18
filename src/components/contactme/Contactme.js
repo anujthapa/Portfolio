@@ -1,10 +1,12 @@
 import React, { Component } from "react"
 import "./contactme.scss"
+import Gap from "../common/Gap"
 
 class Contactme extends Component {
   render() {
     return (
-      <div>
+      <div id="contact">
+        <Gap />
         <section className="get-in-touch">
           <h1 className="title">Contact Me</h1>
           <form className="contact-form row">
@@ -40,6 +42,7 @@ class Contactme extends Component {
             </div>
           </form>
         </section>
+        <Gap />
       </div>
     )
   }

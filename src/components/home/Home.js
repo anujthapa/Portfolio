@@ -1,13 +1,14 @@
 import React from "react"
 import anuj from "../../utls/img/Anuj.jpg"
+import Button from "../common/Button"
 import "./home.scss"
 
 const Home = () => {
   return (
-    <div className="home box1 shadow1">
-      <div className="intoduction focus">
+    <div className="home box1 shadow1" id="home">
+      <div className="intoduction animated slideInLeft">
         <span>
-          <h2>Hello,I'm</h2>
+          <h2 className="zoomIn">Hello,I'm</h2>
         </span>
         <span>
           <h1>
@@ -24,10 +25,10 @@ const Home = () => {
           <i class="fab fa-codepen" />
         </div>
         <div className="hireme">
-          <button>HIRE ME</button>
+          <Button text="Hire me" />
         </div>
       </div>
-      <div className="img">
+      <div className="img animated slideInRight">
         <img src={anuj} />
       </div>
     </div>
