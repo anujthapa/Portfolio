@@ -23,10 +23,19 @@ const Home = () => {
             <h2> Frontend developer</h2>
           </span>
           <div className="socialmedia">
-            <i class="fab fa-facebook-square" />
-            <i class="fab fa-instagram" />
-            <i class="fab fa-github" />
-            <i class="fab fa-codepen" />
+            <a href="https://www.facebook.com/thapaaanuj" target="blank">
+              <i class="fab fa-facebook-square" />
+            </a>
+            <a href="https://www.instagram.com/anuj.thapa/" target="blank">
+              <i class="fab fa-instagram" />
+            </a>
+            <a href="https://github.com/anujthapa" target="blank">
+              <i class="fab fa-github" />
+            </a>
+
+            <a href="https://codepen.io/anujthapa/" target="blank">
+              <i class="fab fa-codepen" />
+            </a>
           </div>
           <div className="hireme">
             <Button text="Hire me" />
