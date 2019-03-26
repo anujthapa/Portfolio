@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import NetlifyForm from "react-netlify-form"
+
 import "./contactme.scss"
 import Gap from "../common/Gap"
 
@@ -9,38 +11,67 @@ class Contactme extends Component {
         <Gap />
         <section className="get-in-touch">
           <h1 className="title">Contact Me</h1>
-          <form className="contact-form row">
-            <div className="form-field col x-50">
-              <input
-                id="name"
-                className="input-text js-input"
-                type="text"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div className="form-field col x-50">
-              <input
-                id="email"
-                className="input-text js-input"
-                type="email"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div className="form-field col x-100">
-              <input
-                id="message"
-                className="input-text js-input"
-                type="text"
-                placeholder="Message"
-                required
-              />
-            </div>
-            <div className="form-field col x-100 align-center">
-              <input className="submit-btn" type="submit" value="Submit" />
-            </div>
-          </form>
+          <NetlifyForm
+            className="contact__form"
+            name="Form With Recaptcha"
+            recaptcha={{
+              sitekey: "",
+              size: "normal"
+            }}
+          >
+            {({ loading, error, recaptchaError, success, recaptcha }) => (
+              <>
+                {error && (
+                  <div className="connection-error">
+                    Your information was not sent. Please try again later.
+                  </div>
+                )}
+                {/* recaptchaError && (
+                  <div className="recaptcha-error">
+                    Oops, Recaptcha did not match. Please make sure the box is
+                    checked.
+                  </div>
+                ) */}
+                {success && (
+                  <div className="success-message">
+                    Thank you for contacting us! We will get back to you
+                    shortly.
+                  </div>
+                )}
+                {!loading && !success && (
+                  <div className="contact__form">
+                    <div className="contact__email">
+                      <label
+                        className="contact__email-label"
+                        htmlFor="contact-email"
+                      >
+                        Email
+                      </label>
+                      <input
+                        id="contact-email"
+                        type="email"
+                        name="email"
+                        className="contact__email-input"
+                        placeholder="Your email address"
+                        required
+                      />
+                    </div>
+                    <textarea
+                      placeholder="Your message"
+                      className="contact__textarea"
+                      name="description"
+                      required
+                    />
+
+                    {/* recaptcha */}
+                    <button type="submit" className="form-submit">
+                      Send
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </NetlifyForm>
         </section>
         <Gap />
       </div>
