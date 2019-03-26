@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import "./navigation.scss"
 import Menu from "./Menu"
+import Gap from "../common/Gap"
 
 class Navigation extends Component {
   state = {

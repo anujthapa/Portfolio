@@ -4,31 +4,30 @@
 .footer{
   background-color: gray;
   width:80vw;
+  height:6vh;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
   
 }
 .footer.copyright{
-  flex:1;
+  width:40%;
 }
 .footer .socialmedia{
-  width:10vw;
-  margin-left:10vw;
+  width:25%;
   display:flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  .fa-instagram{
+    color:#ffff;
+  }
+  .fa-codepen{
+    color:#fff;
+  }
+  .fa-facebook{
+    color:#4267B2;
+  }
+}
 
-}
-.footer .menu{
-  flex:1;
-}
-.footer .menu ul li{
-text-decoration: none;
-display: inline;
-margin-left:1vw;
-text-align: center;
-justify-content: center;
-}

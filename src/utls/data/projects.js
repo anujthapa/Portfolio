@@ -2,6 +2,7 @@ export const projects = [
   {
     projectname: "Shop Management system",
     date: "12 / 1 / 2013",
+    techUsed: "C#",
     tag: ["C#", "Mysql"],
     subeading: "cash and invotery management system",
     img: "",
@@ -13,6 +14,7 @@ export const projects = [
   {
     projectname: "Movie tickiting system",
     date: "12 / 1 / 2011",
+    techUsed: "PHP",
     tag: ["PHP", "Mysql", "HTML", "CSS", "JAVASCRIPT"],
     subeading: "Book a movie ticket from Home",
     img: "",
@@ -24,6 +26,7 @@ export const projects = [
   {
     projectname: "Rent a car",
     date: "8 / 1 / 2014",
+    techUsed: "PHP",
     tag: ["PHP", "Mysql", "HTML", "CSS", "Bootstrap", "laravel"],
     subeading: "Earn money when you are partying",
     img: "",
@@ -35,7 +38,8 @@ export const projects = [
   {
     projectname: "Country API",
     date: "30 / 09 / 2018",
-    tag: ["HTML", "CSS", "JAVASCRIPT"],
+    techUsed: "REACT",
+    tag: ["HTML", "CSS", "JAVASCRIPT", "React"],
     subeading: "Search and fiter the country list",
     img: "",
     description:

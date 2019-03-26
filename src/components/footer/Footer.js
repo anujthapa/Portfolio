@@ -1,5 +1,5 @@
 import React from "react"
-import "./footer.css"
+import "./footer.scss"
 
 const Footer = () => {
   return (
@@ -9,21 +9,19 @@ const Footer = () => {
           &copy; Anuj thapa {new Date().getFullYear()}
         </div>
         <div className="socialmedia">
-          <i class="fab fa-facebook-square" />
-          <i class="fab fa-instagram" />
-          <i class="fab fa-github" />
-          <i class="fab fa-codepen" />
-        </div>
-        <div className="menu">
-          <ul>
-            <li>WORK</li>
-            <li>ABOUT ME</li>
-            <li>CONTACT</li>
-            <li>HIRE ME</li>
-          </ul>
-        </div>
-        <div className="hireme">
-          <button>HIRE ME</button>
+          <a href="https://www.facebook.com/thapaaanuj" target="blank">
+            <i class="fab fa-facebook-square" />
+          </a>
+          <a href="https://www.instagram.com/anuj.thapa/" target="blank">
+            <i class="fab fa-instagram" />
+          </a>
+          <a href="https://github.com/anujthapa" target="blank">
+            <i class="fab fa-github" />
+          </a>
+
+          <a href="https://codepen.io/anujthapa/" target="blank">
+            <i class="fab fa-codepen" />
+          </a>
         </div>
       </div>
     </div>
