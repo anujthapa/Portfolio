@@ -38,7 +38,9 @@ const Home = () => {
             </a>
           </div>
           <div className="hireme">
-            <Button text="Hire me" />
+            <a href="#contact">
+              <Button text="Hire me" />
+            </a>
           </div>
         </div>
       </div>
