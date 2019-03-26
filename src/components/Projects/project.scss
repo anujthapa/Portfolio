@@ -7,8 +7,11 @@ h1{
   width:100%
 }
 .filters{
-  width:70vw;
+  width:80vw;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-evenly
+  justify-content: space-around;
+ *{
+   margin:.5vw;
+ }
 }

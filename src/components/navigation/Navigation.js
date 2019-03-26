@@ -1,46 +1,40 @@
 import React, { Component } from "react"
 import "./navigation.scss"
+import Menu from "./Menu"
 
 class Navigation extends Component {
   state = {
-    active: true
+    isOpen: false
   }
-  activeToogle = menu => {
-    this.setState({ [menu]: true })
+
+  handleOpen = () => {
+    const { isOpen } = this.state
+    this.setState({
+      isOpen: !isOpen
+    })
   }
   render() {
+    const { isOpen } = this.state
     return (
-      <div className="navigation border-shadow-bottom">
-        <div className="logo">
-          <h1 className="display ">
-            <a href="#home" onClick={() => this.activeToogle()}>
-              &lt;A /&gt;
-            </a>
-          </h1>
+      <React.Fragment>
+        <div className="navigation ">
+          <div className="logo">
+            <h1 className="display ">
+              <a href="#home">&lt;A /&gt;</a>
+            </h1>
+          </div>
+          <div className="burgermenu">
+            <label className="checkbox menu" onClick={this.handleOpen}>
+              <i class="fas fa-bars" />
+            </label>
+          </div>
+          <div className="menu-content">
+            <Menu />
+          </div>
         </div>
-        <div className="menu">
-          <ul>
-            <li>
-              <a href="#work" onClick={() => this.activeToogle("work")}>
-                WORK
-              </a>
-            </li>
-            <li>
-              <a href="#aboutme" onClick={() => this.activeToogle("aboutme")}>
-                ABOUT ME
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => this.activeToogle("contact")}>
-                CONTACT
-              </a>
-            </li>
-            <li>
-              <a>HIRE ME</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div className="burgermenu-content">{isOpen && <Menu />}</div>
+        <div />
+      </React.Fragment>
     )
   }
 }

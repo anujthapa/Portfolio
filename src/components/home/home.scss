@@ -1,4 +1,80 @@
+@media only screen and (max-width: 692px){
 
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    line-height: 1vh;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .shadow1{
+    position:relative;
+    width:87%;
+    height:auto;
+    margin-left:6%;
+    padding: 2vw;
+    border:2px solid #fff;
+    border-radius:5px;
+  }
+  .shadow1:before, .shadow1:after{
+    position:absolute;
+    content:"";
+    bottom:20px;
+    left:2vw;
+    top:80vw;
+    width:40vw;
+    background:white;
+    z-index:-1;
+    -webkit-box-shadow: 0 0 0px #fff;
+    -moz-box-shadow: 0 0 0 #fff;
+    box-shadow: 0 30px 15px gray;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  .shadow1:after{
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 8px;left: auto;
+  }
+  
+  .home .intoduction{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  } 
+  .home .intoduction span{
+  width:100%
+  }
+  .home{
+    .intoduction{
+      .socialmedia{
+    width:10vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }}} 
+  .home .intoduction .hireme{
+    margin-top:2vh;
+    width:100%;
+  }
+  .home .img{
+    width:100%;
+    height: 50vh;
+  } 
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  }
+
+@media only screen and (min-width: 693px){
 .home{
   display: flex;
   flex-wrap: wrap;
@@ -6,27 +82,24 @@
   align-content: center;
   line-height: 1vh;
   position: relative;
- 
- 
+ background-color: #fff;
 }
 
-.box1{
-  background-color:white;
-  
-}
+
 .shadow1{
   position:relative;
   width:87%;
-  height:85vh;
   margin-left:6%;
   border:2px solid #fff;
   border-radius:5px;
+  height: auto;
+  padding: 10vh 4vw;
 }
 .shadow1:before, .shadow1:after{
   position:absolute;
   content:"";
-  bottom:25px;
-  left:1vw;
+  bottom:4vh;
+  left:2vw;
   top:20vw;
   width:40vw;
   background:white;
@@ -34,9 +107,9 @@
   -webkit-box-shadow: 0 0 0px #fff;
   -moz-box-shadow: 0 0 0 #fff;
   box-shadow: 0 30px 15px gray;
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
-  transform: rotate(-6deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-5deg);
 }
 .shadow1:after{
   -webkit-transform: rotate(6deg);
@@ -75,3 +148,5 @@ img{
   max-width: 100%;
   max-height: 100%;
 }
+
+  }

@@ -8,6 +8,9 @@ import Project from "./components/Projects/Projects"
 import "./App.css"
 
 class App extends Component {
+  StillOnProgress = () => {
+    alert("This page is underconstruction")
+  }
   render() {
     return (
       <div className="App">

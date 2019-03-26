@@ -5,7 +5,10 @@ import "./home.scss"
 
 const Home = () => {
   return (
-    <div className="home box1 shadow1" id="home">
+    <div className="home  shadow1" id="home">
+      <div className="img animated slideInRight">
+        <img src={anuj} />
+      </div>
       <div className="intoduction animated slideInLeft">
         <span>
           <h2 className="zoomIn">Hello,I'm</h2>
@@ -27,9 +30,6 @@ const Home = () => {
         <div className="hireme">
           <Button text="Hire me" />
         </div>
-      </div>
-      <div className="img animated slideInRight">
-        <img src={anuj} />
       </div>
     </div>
   )
