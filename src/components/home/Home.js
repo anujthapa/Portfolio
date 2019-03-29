@@ -6,6 +6,7 @@ import "./home.scss"
 const Home = () => {
   return (
     <div id="home-bg">
+      {alert("THIS PAGE IS STILL ON DEVELOPMENT PROCESS")}
       <div className="home  shadow1" id="home">
         <div className="img animated slideInRight">
           <img src={anuj} />
