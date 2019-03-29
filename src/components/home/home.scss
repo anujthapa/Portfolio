@@ -8,6 +8,7 @@
     line-height: 1vh;
     position: relative;
     background-color: #fff;
+    
   }
   
   .shadow1{
@@ -75,13 +76,19 @@
   }
 
 @media only screen and (min-width: 693px){
+  #home-bg{
+   display: flex;
+   height: 85vh;
+   align-content: center;
+  }
 .home{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-  line-height: 1vh;
+  line-height: 2vh;
   position: relative;
+  margin-top:5vh;
  background-color: #fff;
 }
 

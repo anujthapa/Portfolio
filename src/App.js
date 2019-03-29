@@ -5,6 +5,7 @@ import Aboutme from "./components/aboutme/Aboutme"
 import Contactme from "./components/contactme/Contactme"
 import Footer from "./components/footer/Footer"
 import Project from "./components/Projects/Projects"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import "./App.css"
 
 class App extends Component {
@@ -18,8 +19,11 @@ class App extends Component {
 
         <Home />
         <Project />
+
         <Aboutme />
+
         <Contactme />
+
         <Footer />
       </div>
     )

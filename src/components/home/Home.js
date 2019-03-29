@@ -5,7 +5,7 @@ import "./home.scss"
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <div id="home-bg">
       <div className="home  shadow1" id="home">
         <div className="img animated slideInRight">
           <img src={anuj} />
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 export default Home
